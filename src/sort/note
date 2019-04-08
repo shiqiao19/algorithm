@@ -1,0 +1,22 @@
+        平均时间    最好    最坏  空间      稳定    排序方式
+冒泡排序    n^2     n       n^2     1
+选择排序    n^2     n^2     n^2     1       no
+插入排序    n^2     n       n^2     1
+
+希尔排序    nlogn   nlogn^2 nlogn^2 1       no
+归并排序    nlogn   nlogn   nlogn   n               out
+快速排序    nlogn   nlogn   n^2     logn    no
+堆排序      nlogn   nlogn   nlogn   1       no
+
+计数排序    n+k     n+k     n+k     k               out
+桶排序      n+k     n+k     n^2     n+k             out
+基数排序    n*k     n*k     n*k     n+k             out
+
+内排序：所有排序操作都在内存中完成；
+外排序：由于数据太大，因此把数据放在磁盘中，
+        而排序通过磁盘和内存的数据传输才能进行；
+n: 数据规模
+k: “桶”的个数
+In-place: 占用常数内存，不占用额外内存
+Out-place: 占用额外内存
+//部分内容转载自   https://www.cnblogs.com/guoyaohua/p/8600214.html
